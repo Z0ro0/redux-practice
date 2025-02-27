@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
+import Box from './component/Box';
+import GrandSonBox from './component/GrandSonBox';
 
 function App() {
   const dispatch = useDispatch();
@@ -14,6 +16,8 @@ function App() {
     <div>
       <h1>{count}</h1>
       <button onClick={increase}>증가</button>
+      <Box />
+      <GrandSonBox />
     </div>
   );
 }
